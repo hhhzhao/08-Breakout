@@ -10,18 +10,18 @@ onready var sprite = get_node("Sprite")
 var score = 10
 
 func _ready():
-   if get_parent().name == "Blue Brick":
-       sprite.set_texture(blue)
-   if get_parent().name == "Pink Brick":
-       sprite.set_texture(pink)
+   if get_parent().name == "Green Brick":
+       sprite.set_texture(green)
+   if get_parent().name == "Purple Brick":
+       sprite.set_texture(purple)
        score = 15
    if get_parent().name == "Metal Brick":
        sprite.set_texture(metal)
        score = 20
-   if get_parent().name == "Green Brick":
-       sprite.set_texture(green)
+   if get_parent().name == "Pink Brick":
+       sprite.set_texture(pink)
        score = 25
-   if get_parent().name == "Purple Brick":
-       sprite.set_texture(purple)
+   if get_parent().name == "Blue Brick":
+       sprite.set_texture(blue)
        score = 30
 	

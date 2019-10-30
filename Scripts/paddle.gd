@@ -17,3 +17,10 @@ func _input(event):
    ball.name = "Ball"
    ball.linear_velocity = Vector2(200, -200)
    get_parent().add_child(ball)
+ if get_parent().score>=100 and event is InputEventMouseButton and event.pressed:
+  if not get_parent().has_node("Ball2"):
+   var ball2 = new_ball.instance()
+   ball2.position = position - Vector2(0, 32)
+   ball2.name = "Ball2"
+   ball2.linear_velocity = Vector2(200, -200)
+   get_parent().add_child(ball2)
